@@ -1,0 +1,110 @@
+body{
+    background-color: hsl(0, 0%, 86%);
+    font-family: 'Poppins', sans-serif;
+  }
+
+  main{
+    height: 500px;
+    width: 600px;
+    background-color: white;
+    padding: 20px 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px 0 0 20px;
+    border-bottom-right-radius: 130px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  @media screen and (max-width: 768px) {
+    main {
+      width: 73%;
+      height: 90%;
+      max-width: 600px;
+      border-radius: 20px;
+      border-bottom-right-radius: 120px;
+    }
+  }
+.date-section form{
+  display: flex;
+  justify-content: space-between;
+}
+.date-section label{
+  color: hsl(0, 1%, 44%);
+  font-weight: 800;
+  font-size: 10px;
+  letter-spacing: 2px;
+}
+
+.date-section  input{
+  width: 100px;
+  height: 30px;
+  padding: 10px;
+  margin-right: 50px;
+  border-radius: 5px;
+  border: 1px hsl(0, 0%, 86%) solid;
+  font-weight: 800;
+  font-size: 25px;
+}
+.date-section input:focus {
+  outline: none;
+}
+@media screen and (max-width: 768px) {
+  .date-section input{
+    width: 75px;
+    margin-right: 35px;
+
+  }
+}
+.date-section p{
+  font-size: 10px;
+  margin-bottom: -15px;
+  font-weight: 600;
+}
+
+.line{
+  position: relative;
+}
+.line .space{
+  background-color: hsl(0, 1%, 75%);
+  padding: 0.5px;
+  margin-top: 60px;
+}
+.line img{
+  width: 60px;
+  padding: 15px;
+  background-color: hsl(259, 100%, 65%);
+  border-radius: 50%;
+  position: absolute;
+  top: -50px;
+  right: 0;
+  cursor: pointer;
+  pointer-events: auto;
+}
+@media screen and (max-width: 768px) {
+  .line img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 45px;
+    padding: 10px;
+  }
+}
+.show-section{
+  margin-top: 50px;
+}
+.show-section .year-out , .month-out, .day-out{
+  font-size: 90px;
+  font-weight: 600;
+  color: hsl(0, 0%, 8%);
+
+} 
+@media screen and (max-width: 768px) {
+  .show-section .year-out , .month-out, .day-out{
+    font-size: 63px;
+  }
+}
+.show-section span{
+  color: hsl(259, 100%, 65%);
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Mentor | Age calculator app</title>
+    <link rel="stylesheet" href="/Css/normalize.css" type="text/css">
+    <link rel="stylesheet" href="/Css/Styel.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;0,800;1,400;1,700;1,800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <main>
+    <section class="app-container">
+      <section class="date-section">
+        <form id="my-form">
+            <div class="input-group">
+              <label for="day-input">DAY</label>
+              <input type="text" id="day-input" name="day" placeholder="DD" aria-describedby="day-help" pattern="[0-9]{1,2}" maxlength="2" required />
+              <p id="day-error-massage"></p>
+            </div>
+            <div class="input-group">
+              <label for="month-input">MONTH</label>
+              <input type="text" id="month-input" name="month" placeholder="MM" aria-describedby="month-help" pattern="[0-9]{1,2}" maxlength="2" required />
+              <p id="month-error-massage"></p>
+            </div>
+            <div class="input-group">
+              <label for="year-input">YEAR</label>
+              <input type="text" id="year-input" name="year" placeholder="YYYY" aria-describedby="year-help" pattern="[0-9]{4}" maxlength="4" required />
+              <p id="year-error-massage"></p>
+            </div>
+        </form>
+      </section>
+      
+      <div class="line">
+        <div class="space"></div>
+          <img id="my-image" src="/images/icon-arrow.svg" alt="Calculate Age" />
+
+      </div>
+      <section class="show-section">
+        <div class="year-out">
+          <span id="year-out">- -</span>
+          years
+        </div>
+        <div class="month-out">
+          <span id="month-out">- -</span>
+          months
+        </div>
+        <div class="day-out">
+          <span id="day-out">- -</span>
+          days
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <script src="/Js/app.js"></script>
+</body>
+
+</html>
