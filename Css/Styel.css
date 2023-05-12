@@ -52,7 +52,7 @@ body{
 @media screen and (max-width: 768px) {
   .date-section input{
     width: 60px;
-    margin-right: 30px;
+    margin-right: 20px;
 
   }
 }
@@ -102,7 +102,7 @@ body{
 } 
 @media screen and (max-width: 768px) {
   .show-section .year-out , .month-out, .day-out{
-    font-size: 53px;
+    font-size: 48px;
   }
 }
 .show-section span{
