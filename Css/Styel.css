@@ -102,7 +102,7 @@ body{
 } 
 @media screen and (max-width: 768px) {
   .show-section .year-out , .month-out, .day-out{
-    font-size: 60px;
+    font-size: 53px;
   }
 }
 .show-section span{
